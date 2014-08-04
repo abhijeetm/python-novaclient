@@ -77,3 +77,13 @@ Quick-start using keystone::
     [...]
     >>> nt.keypairs.list()
     [...]
+
+Docker Image for nova client
+----------------------------
+
+1. docker pull abhijeetm/python-novaclient
+
+2. docker run -i -t -e OS_AUTH_URL=<url> -e OS_USERNAME=<user name> -e OS_PASSWORD=<password>
+   -e OS_TENANT_NAME=<tenant name> abhijeetm/python-novaclient /bin/bash
+
+3. use nova command
